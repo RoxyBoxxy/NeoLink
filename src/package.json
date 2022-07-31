@@ -1,0 +1,44 @@
+{
+    "name": "NeoLink - Audio FFT",
+    "version": "0.0.8",
+    "description": "A app to access friends and more on NeosVR",
+    "node-main": "server.js",
+    "main": "index.html",
+    "window": {
+        "min_width": 1197,
+        "min_height": 600,
+        "icon": "assets/icon.png",
+        "toolbar": true
+    },
+    "developer": {
+        "showDevToolsOnStartup": true
+    },
+    "chromium-args" : "--disable-raf-throttling --remote-debugging-port=9222",
+    "manifestUrl": "https://raw.githubusercontent.com/RoxyBoxxy/NeosX/main/src/package.json",
+    "maintainers": [
+        {
+            "name": "Roxanne",
+            "web": "https://github.com/roxyboxxy"
+        }
+    ],
+    "bugs": "https://github.com/RoxyBoxxy/NeosX/issues",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/julmot/nw.js-examples/blob/master/LICENSE"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/RoxyBoxxy/NeosX.git",
+            "path": "src/"
+        }
+    ],
+    "dependencies": {
+        "bootstrap": "^4.0.0-alpha.5",
+        "font-awesome": "^4.7.0",
+        "node-webkit-updater": "^0.3.3",
+        "ws": "^8.8.1"
+    }
+}

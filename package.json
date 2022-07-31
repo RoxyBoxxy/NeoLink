@@ -1,0 +1,35 @@
+{
+    "name": "nw.js-examples",
+    "version": "1.0.0",
+    "description": "nw.js features demonstrated in a simple project",
+    "license": "MIT",
+    "author": {
+        "name": "Julian Motz",
+        "url": "https://github.com/julmot"
+    },
+    "repository": {
+        "url": "https://github.com/julmot/nw.js-examples.git",
+        "type": "git"
+    },
+    "bugs": {
+        "url": "https://github.com/julmot/nw.js-examples/issues"
+    },
+    "developer": {
+        "showDevToolsOnStartup": true
+    },
+    "scripts": {
+        "dev": "nw src/ --remote-debugging-port=9222",
+        "prod": "nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ src/",
+        "build": "nwb nwbuild -v 0.52.2 -p win64 ./src"
+    },
+    "devDependencies": {
+        "del": "^2.2.1",
+        "gulp": "^3.9.1",
+        "gulp-clean": "^0.3.2",
+        "gulp-load-plugins": "^1.2.4",
+        "nw": "^0.52.2-sdk",
+        "nw-builder": "^3.1.2",
+        "nwjs-builder": "latest",
+        "yargs": "^4.7.1"
+    }
+}
